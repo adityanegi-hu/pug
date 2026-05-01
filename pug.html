@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pug Template Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        .container {
+            background: #eef;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pug Template Engine</h1>
+
+    <p>
+        Pug is a high-performance template engine for Node.js that serves as an HTML preprocessor.
+        It allows you to write cleaner, more concise code by replacing traditional HTML syntax
+        with a whitespace-sensitive, indentation-based language that is eventually compiled into standard HTML.
+    </p>
+
+    <h2>Key Concepts of Pug</h2>
+
+    <ul>
+        <li><strong>Cleaner Syntax:</strong> It eliminates the need for closing tags and uses indentation to define the structure of the document.</li>
+        <li><strong>Dynamic Content:</strong> Since it is a template engine, you can inject variables, use conditionals (if/else), and perform loops directly within your files.</li>
+        <li><strong>Reusable Components:</strong> It supports mixins, which allow you to create reusable blocks of code.</li>
+        <li><strong>Node.js Integration:</strong> Commonly used with frameworks like ExpressJS to render dynamic web pages.</li>
+    </ul>
+
+    <h2>Why Use Pug?</h2>
+
+    <p>
+        Many developers choose Pug because it significantly reduces the amount of code you have to write compared to standard HTML.
+        By focusing on indentation and removing verbose syntax, it leads to better readability and faster development.
+    </p>
+
+    <h2>History</h2>
+
+    <p>
+        Previously known as Jade, it was renamed to Pug in 2016 due to trademark conflicts.
+        Tutorials referencing "Jade" refer to the same technology.
+    </p>
+
+    <h2>Example Comparison</h2>
+
+    <h3>Pug Code:</h3>
+    <pre>
+doctype html
+html(lang="en")
+  body
+    h1 Welcome to Pug
+    div.container
+      p This is much shorter than HTML!
+    </pre>
+
+    <h3>Compiled HTML Output:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to Pug&lt;/h1&gt;
+    &lt;div class="container"&gt;
+      &lt;p&gt;This is much shorter than HTML!&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+</body>
+</html>
